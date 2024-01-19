@@ -1,0 +1,1 @@
+const ageLimit = 18;
