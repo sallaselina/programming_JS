@@ -6,7 +6,5 @@
 function fahrenheitToCelsius(x) {
   return (((x - 32) * 5) / 9).toFixed(1);
 }
-/* fahrenheitToCelsius(x) = (x-32)*5/9;
- => fahrenheitToCelsius.toFixed(1); */
 
 console.log(fahrenheitToCelsius(21)); // "-6,1"
