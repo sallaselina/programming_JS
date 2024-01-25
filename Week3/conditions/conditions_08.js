@@ -7,11 +7,11 @@ Returns a string combining the number and the appropriately pluralized form of t
  */
 
 // Sample usage - do not modify
-function pluralize(x, y) {
-  if (y === 0) {
-    return y + x;
+function pluralize(pet, number) {
+  if (number === 1) {
+    return number + " " + pet;
   } else {
-    return x + "s";
+    return number + " " + pet + "s";
   }
 }
 
