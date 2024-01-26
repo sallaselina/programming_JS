@@ -13,24 +13,16 @@ Returns a letter grade for the score based on these criteria:
 
 // Sample usage - do not modify
 function assignGrade(score) {
-  switch (true) {
-    case score >= 90:
-      console.log("A");
-      break;
-    case score >= 80:
-      console.log("B");
-      break;
-    case score >= 70:
-      console.log("C");
-      break;
-    case score >= 60:
-      console.log("D");
-      break;
-    case score < 60:
-      console.log("F");
-      break;
-    default:
-      console.log("Score not applicable");
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else {
+    return "F";
   }
 }
 console.log("You got a " + assignGrade(95)); // You got a A

@@ -3,11 +3,7 @@ Implement the function canVote such that it returns true whenever the age 18 or 
 */
 
 function canVote(age) {
-  if (age >= 18) {
-    return true;
-  } else {
-    return false;
-  }
+  return age >= 18;
 }
 
 // Sample usage - do not modify

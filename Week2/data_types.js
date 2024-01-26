@@ -9,9 +9,9 @@
 
 - Use the typeof operator to check the data type of each variable and print the result using console.log(). */
 
-let age = 26;
-let name = "Salla";
-let isStudent = true;
+const age = 26;
+const name = "Salla";
+const isStudent = true;
 const hobbies = ["reading", "writing"];
 const info = { schoolName: "BC", grade: 5 };
 console.log(age, name, isStudent, hobbies, info);

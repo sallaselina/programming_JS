@@ -3,8 +3,9 @@
 // The resulting temperature is rounded to one decimal place for precision.
 
 // Sample usage - do not modify
-function fahrenheitToCelsius(x) {
-  return (((x - 32) * 5) / 9).toFixed(1);
+function fahrenheitToCelsius(fahrenheit) {
+  let answer = ((fahrenheit - 32) * 5) / 9;
+  return answer.toFixed(1);
 }
 
 console.log(fahrenheitToCelsius(21)); // "-6,1"

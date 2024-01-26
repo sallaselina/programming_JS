@@ -8,3 +8,7 @@ function sum(a, b) {
 
 console.log(sum(1, 3));
 console.log(sum(2, 5));
+
+const sum = (a, b) => {
+  a + b;
+};

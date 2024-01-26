@@ -14,6 +14,7 @@ function greaterNum(x, y) {
     return y;
   }
 }
+//return x > y ? x : y;
 
 console.log(greaterNum(5, 10));
 console.log(greaterNum(2, 1));
