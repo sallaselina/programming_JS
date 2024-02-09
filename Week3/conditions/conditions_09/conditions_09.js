@@ -3,6 +3,7 @@ The user will input a yes-or-no question, and the program will output a random r
 Implement the program using conditional statements to select and display one of several predefined responses. */
 // prompt ask a question
 let promptInput = prompt("Ask me anything! ");
+console.log(`You entered ${promptInput}`);
 //random function, run random number 1-8 then make a switch
 let rand = Math.floor(Math.random() * 8) + 1;
 switch (rand) {
@@ -10,7 +11,7 @@ switch (rand) {
     console.log("Signs point to yes");
     break;
   case 2:
-    console.log("I am not sure, ask again");
+    console.log("I'm not sure, ask again");
     break;
   case 3:
     console.log("Consider all your options");

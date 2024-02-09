@@ -2,13 +2,19 @@
 and time (in hours) and then calculates the average speed. 
 The program should terminate when the user enters 0 for the distance. 
 Upon receiving a distance of 0, the program should not prompt for any further input.*/
+
+//declare empty global variables
 let km;
 let hrs;
-let avgSpeed;
+//use while if structure for the loop
 
-do {
-  km = Number.parseInt(prompt("Enter distance in km "));
-  hrs = Number.parseInt(prompt("Enter time in hrs "));
-  avgSpeed = km / hrs;
-  console.log(avgSpeed);
-} while (km !== 0);
+while (km != 0) {
+  km = Number(prompt("Enter distance in km "));
+  if (distance === 0) {
+    console.log("Cannot count average speed");
+    break;
+  }
+  hrs = Number(prompt("Enter time in hrs "));
+  let avgSpeed = km / hrs;
+  console.log(`Average speed is ${avgSpeed} kilometers per hour`);
+}

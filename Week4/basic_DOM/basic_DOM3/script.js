@@ -20,11 +20,21 @@ The event listener's function should:
 - Update the textContent of the displayText <div> to match the input field's value.
 - To have the display update more dynamically (as the user types), consider using the input event instead of or in addition to the change event.  */
 
-let input = document.getElementById("inputField").value;
-let content = document.querySelector(".displayText").textContent;
+/* const input = document.getElementById("inputField");
+const content = document.querySelector("#displayText");
 
 function update() {
-  return (content = input);
+  content.textContent = input.value;
 }
 
-input.addEventListener("input", update);
+input.addEventListener("input", update); */
+
+//margit's solution
+const input = document.querySelector("#text");
+const text = document.querySelector("#displayText");
+
+const changeText = () => {
+  text.textContent = input.value;
+};
+
+input.addEventListener("input", changeText);
