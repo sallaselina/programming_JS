@@ -9,7 +9,7 @@ Expected outcome:
 */
 // Write your function here
 
-/* const myAlphabetLength = () => myAlphabet.length;
+const myAlphabetLength = () => myAlphabet.length;
 if (myAlphabet.length < 5) {
   console.log("Array length less than 5");
 } else {
@@ -17,7 +17,7 @@ if (myAlphabet.length < 5) {
     `The length of myAlphabet: ${myAlphabet.length} \n Array length is greater than or equal to 5.`
   );
 }
-myAlphabetLength(); */
+myAlphabetLength();
 
 // Exerice 2: Iterate over array and log each item with its index
 const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter"];
@@ -86,12 +86,12 @@ Expected outcomes:
 "Letters in 'Couch': C, o, u, c, h"
 */
 // Write your code here
-furniture.forEach(logLetters);
+/* furniture.forEach(logLetters);
 function logLetters(item) {
   for (const letter of item) {
     console.log(`Letters in ${item}: ${letter}, `);
   }
-}
+} */
 // Exerice 7: Filter positive temperatures
 let temperatures = [-5, 3, -1, 22, -40, 5, 18];
 /*

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(paleturquoise, lightpink);
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+
+button {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 5px;
+}

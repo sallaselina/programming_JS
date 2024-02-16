@@ -9,17 +9,10 @@ const priceCalc = () => {
   for (const checkbox of checkboxes) {
     // for each loop used for collections, i.e. arrays and nodelists! this is a nodelist
     if (checkbox.checked) {
-      total += parseInt(checkbox.value);
+      //checking if checkbox is checked
+      total += parseInt(checkbox.value); // adding to the total the value of the checkbox
     }
   }
   priceBanner.textContent = `${total} €`;
 };
 form.addEventListener("change", priceCalc);
-
-/* let pancakeType = document.getElementById("type");
-let total = document.getElementById("totalPrice");
-function typePrice() {
-  total.textContent = pancakeType.value + "€";
-  total2.textContent = pancakeType.value + "€";
-}
-pancakeType.addEventListener("change", typePrice); */
