@@ -4,14 +4,15 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const typeSelect = document.querySelector("#type");
 
 let total;
-let toppings = [];
+let toppings = []; // arrays for the toppings and extras
 let extras = [];
 
 const pancakePriceCalc = () => {
+  // calculating the total
   const totalPriceElement = document.querySelector("#totalPrice");
   const priceBanner = document.querySelector(".price-banner");
 
-  total = parseInt(typeSelect.value);
+  total = parseInt(typeSelect.value); // first, total includes the type selected! make it a number
   totalPriceElement.textContent = `$${total}`;
   checkToppings();
 
@@ -28,6 +29,7 @@ const pancakePriceCalc = () => {
   );
 };
 const addItem = (itemName, category) => {
+  // function to add item to array
   if (category === "toppings") {
     toppings.push(itemName);
   } else {
@@ -35,26 +37,29 @@ const addItem = (itemName, category) => {
   }
 };
 
-const removeItem = () => {};
+const removeItem = () => {}; // function to remove item from array
 
 const checkToppings = () => {
   toppings = [];
   extras = [];
   for (const item of checkboxes) {
+    // for of loop to check the checkboxes by their name and category
     const itemName = item.dataset.name;
     const category = item.dataset.category;
 
     if (item.checked) {
+      // if checkbox is checked, it is added to the total and added into the array or removed from it
       total += parseInt(item.value);
       addItem(itemName, category);
     } else {
       removeItem(itemName, category);
     }
   }
-  console.log("toppings array", toppings, "extras array", extras);
+  console.log("toppings array", toppings, "extras array", extras); // you don't need this
 };
 
 const displayOrder = () => {
+  // more advanced, how to display the order, make new variables in the function scope
   const customerName = document.getElementById("name").value;
   const orderType = document.querySelector("#orderType");
   const orderToppings = document.querySelector("#orderToppings");
