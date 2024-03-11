@@ -32,6 +32,6 @@ const displayData = (data) => {
   const query = document.querySelector("#search").value;
   const searchResult = document.querySelector("#searchResult");
   const findResult = allPokemon.find()
-  searchResult.textContent = 
+  searchResult.textContent = findResult;
 };
  */
