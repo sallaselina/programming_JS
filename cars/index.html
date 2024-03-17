@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+  </head>
+  <body>
+    <h1>Insert car data</h1>
+    <form>
+      <label for="license">License plate:</label>
+      <input type="text" id="license" /><br />
+      <label for="maker">Maker:</label>
+      <input type="text" id="maker" /><br />
+      <label for="model">Model:</label>
+      <input type="text" id="model" /><br />
+      <label for="owner">Current owner:</label>
+      <input type="text" id="owner" /><br />
+      <label for="price">Price:</label>
+      <input type="text" id="price" /><br />
+      <label for="color">Color:</label>
+      <input type="text" id="color" /><br />
+      <button type="submit"></button>
+    </form>
+    <table>
+      <tr>
+        <th>License plate:<span id="displayPlate"></span></th>
+        <th>Maker:<span id="displayMaker"></span></th>
+        <th>Model:<span id="displayModel"></span></th>
+        <th>Current owner:<span id="displayOwner"></span></th>
+        <th>Price:<span id="displayPrice"></span></th>
+        <th>Color:<span id="displayColor"></span></th>
+      </tr>
+    </table>
+    <h3>Search for a car with the license plate number</h3>
+    <input type="text" />
+    <script src="cars.js"></script>
+  </body>
+</html>
