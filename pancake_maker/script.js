@@ -35,7 +35,13 @@ const addItem = (itemName, category) => {
   }
 };
 
-const removeItem = () => {};
+const removeItem = (itemName, category) => {
+  if (category === "toppings") {
+    toppings.pop(itemName);
+  } else {
+    extras.pop(itemName);
+  }
+};
 
 const checkToppings = () => {
   toppings = [];
@@ -51,7 +57,6 @@ const checkToppings = () => {
       removeItem(itemName, category);
     }
   }
-  console.log("toppings array", toppings, "extras array", extras);
 };
 
 const displayOrder = () => {

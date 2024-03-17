@@ -49,3 +49,31 @@ body {
   font-size: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+#orderButton {
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+  background-color: #d17b49;
+  border-radius: 20px;
+  height: 3rem;
+  width: 6rem;
+  box-shadow: none;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customerOrder {
+  background-color: #d17b49;
+  width: 300px;
+  max-height: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #5a4a42;
+  text-align: left;
+}
+.customerOrder h3 {
+  text-align: center;
+}

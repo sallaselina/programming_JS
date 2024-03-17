@@ -1,4 +1,7 @@
 const form = document.querySelector(".form-container"); // using the form-container class to select the element
+const orderButton = document.querySelector("#orderButton");
+let toppings = [];
+let extras = [];
 
 const priceCalc = () => {
   const typeSelect = document.querySelector("#type"); //pancake type
@@ -13,6 +16,12 @@ const priceCalc = () => {
       total += parseInt(checkbox.value); // adding to the total the value of the checkbox
     }
   }
-  priceBanner.textContent = `${total} €`;
+  priceBanner.textContent = `${total}€`;
 };
+
+const showOrder = () => {
+  const customerName = document.querySelector("#name").value;
+};
+
 form.addEventListener("change", priceCalc);
+orderButton.addEventListener("click", showOrder);
